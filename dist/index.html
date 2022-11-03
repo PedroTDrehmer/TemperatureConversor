@@ -10,7 +10,7 @@
 
 <body class="container">
     <br></br>
-    <h1 class="text-center">Temperature Conversor</h1>
+    <h1 class="text-center">Conversor de Temperatura</h1>
     
     <div id="mensagemView"></div>
     
@@ -18,9 +18,9 @@
         
         <div class="form-group">
             <label for="type">Type</label>
-            <select name="info[]" class="form-control">
-                <option value="cel" id="cel">Celsius</option>
-                <option value="fah" id="fah">Fahrenheit</option>
+            <select name="info[]" class="form-control" id="celFah">
+                <option value="cel">Celsius</option>
+                <option value="fah">Fahrenheit</option>
             </select>
         </div>    
         
@@ -29,7 +29,7 @@
             <input type="number" id="temperature" value="temperature" class="form-control" d/>
         </div>
 
-        <button class="btn btn-primary" type="submit">Confirm</button>
+        <button class="btn btn-primary" type="submit" id="send">Confirm</button>
         
         <br></br>
         
