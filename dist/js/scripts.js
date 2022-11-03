@@ -8,11 +8,14 @@ btn.addEventListener("click", function (e) {
 
     const tipo = document.getElementById("celFah").value;
 
-    console.log(temperature);
+    // console.log(temperature);
 
     var Temperatura = Formula(tipo, Number(temperature));
 
-    console.log(Temperatura);
+    var result = document.getElementById("result").innerHTML;
+
+    document.getElementById("result").innerHTML = `${result} ${Temperatura}`;
+
 });
 
 function Formula(type, temperature) {
